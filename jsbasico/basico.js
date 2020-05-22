@@ -64,10 +64,10 @@ var text="hola ";
     //case 1:
     //alert ('Contiene varias herramientas de dibujo: papel, lápices, etc. ')
     //break; TAMBIEN SE PUEDE USAR SWITCH EN VEZ DE IF PERO ES MAS QUE TODO PARA NUMEROS
-   var hoja=1;
+   /*var hoja=1;
    while(hoja=10){
        hoja++;
    } 
-   alert(hoja)
+   alert(hoja)*/
    
   

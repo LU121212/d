@@ -6,21 +6,33 @@
     <meta name="description" content="Este una pagina de seguridad">
     <meta name="keywords" content="camara,video,Seguridad">
     <link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+    <link rel="stylesheet" href="estilo.css">
+    <script src="objetowindow.js"></script> 
     <title>Camarazx</title>
 </head>
-<body>
+<body onload="tag1()">
  <div>
     <header id="Inicio">
-        <h1>CAMARAPORTATIL</h1>
-        <time datetime="2020-05-05">Primer borrador el 05-05-20</time>
+        <h1 class="titulo">CAMARAPORTATIL</h1>
+        <time datetime="2020-05-05" class="fecha">Primer borrador el 05-05-20</time>
     </header>
-    <nav>
-        Inicio||Subir||Revisar||Organizar
+    <nav >
+        <ul class="navegacion">
+            <li>INCIO||
+                <ul>
+                <li><a href="familia.html">Familia</a></li>
+                <li><a href="vacaciones.html">Vacaciones</a></li>
+                </ul> 
+            </li>    
+            <li>PROPIE||</li>
+            <li>ETC1||</li>
+            <li>ETC2</li>
+        </ul>
     </nav>
     <main>
-        <section>
-            <article>
-                <p>
+        <section class="seccion"> 
+            <article class="contenido1">
+                <p class="relleno1">
                       dolor sit amet consectetur adipisicing elit. Non odio repudiandae optio dolores 
                     fuga pariatur eum ea quo cumque dolorum facere quisquam autem doloribus, ut tempora amet? 
                     Voluptatum excepturi voluptas animi modi quasi quam, sed ducimus! Beatae ad eum illum autem maxime
@@ -28,12 +40,12 @@
                     orem facilis ab inventore quos, quae, labore blanditiis reiciendis! Voluptas, possimus magni!
                     
                 </p>
-                <figure><!--cuando no son imagenes relevantes como las del logo-->
-                    <img src="descarga.jpg" alt="Es un gato con una camara "><!--por si la imagen no carga-->
+                <figure ><!--cuando no son imagenes relevantes como las del logo-->
+                    <img src="descarga.jpg" alt="Es un gato con una camara " width="180" height="200"> <!--por si la imagen no carga-->
                     <figcaption>Es un gato con una camara</figcaption><!--descripcion de la imagen-->
                 </figure>
             </article>
-            <article>
+            <article class="contenido2">
                 <p>
                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere dicta aperiam odit d
                    ebitis nisi ducimus ad dolore dignissimos, 
@@ -45,24 +57,26 @@
             </article>
         </section>
     </main>
-    <aside>
-        <details>   <!--ETIQUETA DETAILS-->
+    <aside class="columna">
+        <details >   <!--ETIQUETA DETAILS-->
         <summary>Opciones</summary> <!--funciona para crear listas interacivas con un click-->
-        <p>Nuevo</p>
-        <p>Cargar</p>
-        <p>Guardar</p>
-        <p>Guardar como</p>
+        <p class="lista">Nuevo</p>
+        <p class="lista">Cargar</p>
+        <p class="lista">Guardar</p>
+        <p class="lista">Guardar como</p>
         </details>
-        <form action="procesar.php" name="Registro" method="get"><!--PARECIDO A TKINTER-->
+        <button type="button" onclick="setTimeout(realizar,2000)">haga clikc</button><!--controla el timepo antes de hacer una acction-->
+        <form action="gaaa.php" name="Registro" method="get" ><!--PARECIDO A TKINTER-->
             <P><label >ID:<input type="text" name="id" maxlength="20"></label></P><!-- LABEL TEXTO;INPUT COMO ENTRY Y FUNCIONA COMO BUTTON DEPENDE DEL TYPE-->
             <P><label >Contraseña:<input type="text" name="contra"></label></P>
             <P><input type="submit" value="ENVIAR DATOS"></P>
             
             <P><label ><input type="radio" name="contra" value="60"> 60 años</label></P>
             <p><input type="date" name="fechas" id="2020-05-05"></p>
+            
         </form>
     </aside>
-    <footer>
+    <footer class="pie ">
         <address>Lima,Peru</address><!--targer:para direciionar el enlace,mailto:para correros,tel:numeros-->
         <small>&copy;2020 <a href="https://www.youtube.com/watch?v=cx6VdgHMIaE&t=345s" target="_blank">Musica</a></small>
         <h6>

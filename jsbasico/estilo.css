@@ -1,0 +1,183 @@
+
+*{
+    margin:0;
+    padding: 0;
+    
+}
+
+body{
+    padding-top: 30px;
+    padding-left: 270px;
+    text-align: center;
+    background-color: rgb(233, 219, 198);
+    
+}
+
+#Inicio{
+    /* border-image-source: border-image-slice: border-image-repeat: ;;; para poner de borde imageners */
+    background: -webkit-linear-gradient(top,white,black); /*mezcla colores el webkit es solo para que funcione en chrome*/
+    padding-top: 10px;
+    width: 500px;
+    border:2px solid black;
+    border-radius: 20px;
+    outline: 2px dashed black;
+    outline-offset: 10px;
+    /* box-shadow: rgb(153, 145, 145) 5px 5px; sombras de una caja tambien se puede usar text shadow */
+    margin-top: 20px;
+    margin-left: 200px;
+    
+
+    
+}
+
+.titulo{
+    margin:auto;
+    background-color:rgb(217, 226, 96);
+    width: 315px;
+    box-shadow: rgb(153, 145, 145) 5px 5px;
+    /*animation: gaaaa 1s ease-in-out 0s infinite normal none;
+}
+@keyframes gaaaa {
+ 0% {
+ background: #FFFFFF;
+ }
+ 50% {
+ background:black;
+ }
+ 100% {
+ background: #FFFFFF;
+ }
+}  codigo para logran animaciones en el cambio de color*/ 
+
+
+}
+
+.fecha{
+    color:white
+}
+
+.navegacion{
+    background-color: black;
+    margin-top: 20px;
+    text-align: left;
+    padding-left: 30px;
+    border:1px solid black;
+}
+.navegacion li{
+    
+    background-color: black;
+    color:white;
+    width: 90px;
+    list-style: none;
+    display:inline-block;
+    position: relative; /*sera la parte dominante*/
+    margin:auto;
+
+    
+}
+
+.navegacion li>ul{
+    
+    display: none;
+    position: absolute;  /*para que se ponga la lista debajo de la parte relativa*/
+    top: 19px;
+    left: -2px; 
+    list-style: none;
+    z-index: 1000; 
+    background-color: black;
+}
+
+.navegacion li:hover ul{
+    
+    display: block;
+    margin:auto;
+    
+    
+}
+.navegacion li>ul>li{
+    width: 90px;
+    border: 1px solid white;
+    color: white;
+}
+
+.navegacion li>ul>li>a{
+    text-decoration: none;
+    color:white;
+}
+
+p{
+    color:black;
+    font-size: 20px;
+}
+
+header,section,footer,nav,article,div,aside{
+    display: block;
+    
+}
+
+.seccion{
+    margin-top: 30px;
+   float: left;
+    width: 600px;
+    
+    margin-left: 20px;
+    
+}
+.contenido1{
+    border: 1px solid black;
+    overflow: auto;
+}
+
+.contenido1 figure{
+    float: left;
+}
+
+.relleno1{
+    border:1px solid black;
+    width: 400px;
+    float: left;
+    column-count: 2;
+    column-gap: 20px;
+    column-rule-style: dashed;
+    column-rule-color:red;
+    
+}
+
+.contenido2{
+    clear: both;
+    border:1px solid black;
+    margin-top: 20px;
+}
+.columna{
+    float: left;
+    border: 1px solid black;
+    margin-left: 40px;
+   
+}
+.pie{
+    clear: both;
+}
+
+
+
+div{
+    width: 960px;
+    background: -webkit-linear-gradient(top,rgb(187, 154, 154),white);
+    border:1px solid black;
+    margin: auto;
+    
+}
+
+.lista:nth-child(odd){  /* odd para lista impar y edd para la par hace que se confiren valores*/
+    background-color: cadetblue;
+}
+
+.lista:nth-child(even){
+    background-color: coral;
+}
+
+@media (max-width: 480px) {
+    body {
+    background-color: #3333FF;
+    } 
+}
