@@ -62,3 +62,4 @@ var CONSTRUCTORES=function(){
 };
 var empleado=CONSTRUCTORES();
 empleado.mostrarnombre();
+
